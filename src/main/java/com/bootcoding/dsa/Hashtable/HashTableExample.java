@@ -9,15 +9,15 @@ public class HashTableExample {
     HashMap<Integer, Integer> store = new HashMap();
     for(int i = 0; i < a.length; i++){
         if(store.containsKey(a[i])){
-            int value = (int) store.get(a[i]);
+            int value = store.get(a[i]);
             store.put(a[i], value+1);
         }else {
             store.put(a[i], 1);
         }
         }
-    for(Object key : store.keySet()){
+    for(Integer key : store.keySet()){
 
-        int value = (int) store.get(key);
+        int value = store.get(key);
         if(value > 1){
             System.out.println(key);
         }
