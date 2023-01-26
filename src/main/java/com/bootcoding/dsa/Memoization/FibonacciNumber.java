@@ -6,11 +6,11 @@ public class FibonacciNumber {
     static HashMap<Integer, Integer> cache = new HashMap<>();
     public static void main(String[] args) {
         long start = System.nanoTime();
-        System.out.println(fib(8));
-        System.out.println("Total Time (ms): " + (System.currentTimeMillis() - start));
-        long start2 = System.currentTimeMillis();
-        System.out.println(fibMemoization(8));
-        System.out.println("Total Time (Memoization) (ms): " + (System.currentTimeMillis() - start2));
+        System.out.println(fib(25));
+        System.out.println("Total Time (ms): " + (System.nanoTime() - start));
+        long start2 = System.nanoTime();
+        System.out.println(fibMemoization(25));
+        System.out.println("Total Time (Memoization) (ms): " + (System.nanoTime() - start2));
     }
     public static int fib(int n){
         if(n == 0 || n == 1){
