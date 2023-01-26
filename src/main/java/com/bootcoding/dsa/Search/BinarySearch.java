@@ -12,7 +12,7 @@ public class BinarySearch {
         if(x == a[mid]){
             return mid;
         }
-        if(left == right){
+        if(left >= right){
             return  -1;
         }
         if(x > a[mid]){
