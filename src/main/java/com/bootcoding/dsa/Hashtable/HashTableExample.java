@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class HashTableExample {
     public static void main(String[] args) {
-        int a[] = {10,20,10,30,20,40};
+        int a[] = {10, 20, 10, 30, 20, 40};
 
     HashMap<Integer, Integer> store = new HashMap();
     for(int i = 0; i < a.length; i++){
@@ -20,6 +20,7 @@ public class HashTableExample {
         int value = store.get(key);
         if(value > 1){
             System.out.println(key);
+            System.out.println(value);
         }
     }
     }
