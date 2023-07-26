@@ -2,11 +2,11 @@ package com.bootcoding.dsa.tree;
 
 public class Preorder {
     public static void main(String[] args) {
-        Node root = new Node(1);
-        Node n2 = new Node(2);
-        Node n3 = new Node(3);
-        Node n4 = new Node(4);
-        Node n5 = new Node(5);
+        TreeNode root = new TreeNode(1);
+        TreeNode n2 = new TreeNode(2);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n4 = new TreeNode(4);
+        TreeNode n5 = new TreeNode(5);
 
         root.left = n2;
         root.right = n3;
@@ -14,7 +14,7 @@ public class Preorder {
         n2.right = n5;
         preorder(root);
     }
-    public static void preorder(Node root){
+    public static void preorder(TreeNode root){
         if(root == null){
             return;
         }

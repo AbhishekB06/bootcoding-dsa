@@ -2,11 +2,11 @@ package com.bootcoding.dsa.tree;
 
 public class Inorder {
     public static void main(String[] args) {
-        Node root = new Node(1);
-        Node n2 = new Node(2);
-        Node n3 = new Node(3);
-        Node n4 = new Node(4);
-        Node n5 = new Node(5);
+        TreeNode root = new TreeNode(1);
+        TreeNode n2 = new TreeNode(2);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n4 = new TreeNode(4);
+        TreeNode n5 = new TreeNode(5);
 
 
         root.left = n2;
@@ -15,7 +15,7 @@ public class Inorder {
         n2.right = n5;
         inorder(root);
     }
-    public static void inorder(Node root){
+    public static void inorder(TreeNode root){
         if (root == null){
             return;
         }
